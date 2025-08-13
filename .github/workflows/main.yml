@@ -1,0 +1,16 @@
+vname: CI de Docker
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout del código
+      uses: actions/checkout@v4
+
+    - name: Construir la imagen de Docker
+      run: docker build -t mi-app-ci .
