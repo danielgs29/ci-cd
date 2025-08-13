@@ -5,8 +5,8 @@ on:
     branches: [ "main" ]
 
 env:
-  AWS_REGION: us-east-1
-  ECR_REPOSITORY: mi-app-ci
+  AWS_REGION: eu-central-1
+  ECR_REPOSITORY: ci/cd/miapp
 
 jobs:
   build_and_push:
