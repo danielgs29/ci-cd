@@ -1,4 +1,4 @@
-vname: CI de Docker
+name: CI de Docker
 
 on:
   push:
